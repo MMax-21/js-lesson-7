@@ -1,7 +1,14 @@
 function setConfigurate(property) {
     switch (property) {
         case 'theme':
-            document.body.classList.toggle('dark');
+            const property = document.documentElement.getAttribute('data-theme');
+            if (property == 'dark') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+            else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+
+            }
             break;
     
         case 'hide_name':
@@ -26,6 +33,7 @@ function bindSwitchs(switchItems) {
             switchItem.classList.toggle(classSwitchActive);
             const property = switchItem.getAttribute('data-property');
             setConfigurate(property);
+            console.log(property);
         })
     }
 }
