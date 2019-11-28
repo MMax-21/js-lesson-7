@@ -121,3 +121,6 @@ li {
     height: 99vh;
 }
 
+.dark > .control {
+    background-color: white;
+}
