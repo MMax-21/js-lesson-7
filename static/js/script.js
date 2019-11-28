@@ -1,3 +1,5 @@
+document.documentElement.setAttribute('data-theme', 'light');
+
 function setConfigurate(property) {
     switch (property) {
         case 'theme':
@@ -33,7 +35,6 @@ function bindSwitchs(switchItems) {
             switchItem.classList.toggle(classSwitchActive);
             const property = switchItem.getAttribute('data-property');
             setConfigurate(property);
-            console.log(property);
         })
     }
 }
