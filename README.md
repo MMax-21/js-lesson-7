@@ -1,2 +1,3 @@
-# js-lesson-7
-# test
+# JS october 2019 
+# Lesson 7 homework
+# Dark theme switch
